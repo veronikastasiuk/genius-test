@@ -4,34 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="#">
+        <a href="./index.html">
           <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         </a>
         <ul>
-          <li><a href="">Наші традиції</a></li>
-          <li><a href="">Шеф-кухарі</a></li>
-          <li><a href="">Формати</a></li>
-          <li><a href="">Контакти</a></li>
+          <li><a class="link" href="#Сhefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#Traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#Formats-section">Формати</a></li>
+          <li><a class="link" href="#Contact-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button-call" type="button">Замовити дзвінок</button>
     </header>
+
     <main>
       <section>
-        <ul>
+        <h1 class="hero-title"><span class="accent">Сучасна</span>пекарня</h1>
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h1>Сучасна пекарня</h1>
       </section>
-      <section>
-        <h2>Новий формат традицій</h2>
+      <section id="Traditions-section">
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -41,14 +43,17 @@
           <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
           стильний дизайн та висока якість обслуговування!
         </p>
-        <img src="./images/beaker-with-bread.jpg" alt="Чоловік дивиться на хліб">
+        <img
+          src="./images/beaker-with-bread.jpg"
+          alt="Чоловік дивиться на хліб"
+        />
       </section>
-      <section>
-        <h2>Наші найкращі шеф-кухарі</h2>
+      <section id="Сhefs-section">
+        <h2 class="section-title">Наші найкращі <section class="accent">шеф-кухарі</section></h2>
         <ul>
           <li>
             <article>
-                <img src="./images/baker-Nastya.jpg" alt="Пекар Настя">
+              <img src="./images/baker-Nastya.jpg" alt="Пекар Настя" />
               <h3>Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -68,32 +73,41 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="Formats-section">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
-              <h4 lang="en">Walrus</h4>
+              <h3 lang="en">Walrus</h3>
             </article>
           </li>
           <li>
             <article>
-              <h4 lang="en">Horseshoe</h4>
+              <h3 lang="en">Horseshoe</h3>
             </article>
           </li>
           <li>
             <article>
-              <h4 lang="en">Handlebar</h4>
+              <h3 lang="en">Handlebar</h3>
             </article>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>приєднуйся до мережі пекарень</h2>
+      <section id="Contact-section">
+        <h2 class="section-title">приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163630441624!2d30.48869301241234!3d50.45667757147522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1794683044034!5m2!1suk!2sua"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
       </section>
+     
     </main>
     <footer>
-        <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+      <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
       <nav>
         <a href="#">
           <!--Logo-->
@@ -128,7 +142,7 @@
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>© 2022 Дані захищені</p>
+        <p>&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
